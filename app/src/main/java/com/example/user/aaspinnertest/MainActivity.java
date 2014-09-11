@@ -74,12 +74,14 @@ public class MainActivity extends Activity {
                 switch(msg.what) {
                     case 0:
                         //add the status which came from service and show on GUI
-                        Toast.makeText(MainActivity.this, msg.obj.toString(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, msg.obj.toString(),Toast.LENGTH_SHORT)
+                                .show();
                         Log.d(TAG, "MainActivity case 0");
                         break;
                     case 1:
                         Log.d(TAG, "MainActivity case 1");
-                        Toast.makeText(MainActivity.this, msg.obj.toString(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, msg.obj.toString(),Toast.LENGTH_SHORT)
+                                .show();
                         break;
                     default:
                         break;
