@@ -85,7 +85,8 @@ public class MyService extends Service {
                                 Message msgToActivity = new Message();
                                 msgToActivity.what = 0;
                                 if(true == mIsServiceRunning) {
-                                    msgToActivity.obj = "Request received, service is running \n" + msg.obj;
+                                    msgToActivity.obj = "Request received, service is running \n"
+                                            + msg.obj;
                                 }
                                 else {
                                     msgToActivity.obj = "Request received, service is not running";
